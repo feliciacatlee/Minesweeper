@@ -112,8 +112,7 @@ public class MSButton {
   public void mousePressed () {
     if (mouseButton == RIGHT && !clicked) {
       flagged = !flagged;
-    } 
-    if (mouseButton == LEFT && !flagged) {
+    } else if (!flagged) {
       if (firstClick) {
         firstClick = false;
         for (int r = -1; r <= 1; r++) {
